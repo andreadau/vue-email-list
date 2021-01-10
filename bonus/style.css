@@ -3,3 +3,33 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    display: grid;
+    background-color: lightblue;
+    place-items: center;
+    height: 100vh;
+}
+.wrapper{
+    display: grid;
+}
+.table {
+    border: 1px solid black;
+}
+.table-cell {
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    display: table-cell;
+    border: 1px solid black;
+    padding: 30px;
+}
+.white {
+    background-color: white;
+}   
+.green {
+    background-color: greenyellow;
+}
+.yellow {
+    background-color: yellow;
+}

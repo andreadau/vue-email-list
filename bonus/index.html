@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Bonus</title>
 </head>
 <body>
     <div id="app">
-        
+        <div class="wrapper">
+            <div class="table">
+                <div class="table-row" v-for="(row,r) in table">
+                    <div class="table-cell" v-for="(cell,c) in row" :class="((cell.num=='') ? ('white') : (cell.num<=5) ? ('yellow') : 'green')"
+                    @click="getRandomNum(r,c)">
+                        {{cell.num}}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" 
