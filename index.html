@@ -7,7 +7,9 @@
 </head>
 <body>
     <div id="app">
-        
+        <div id="email" v-for="(email,index) in userEmails">
+            <h1>{{index+1}} {{email}}</h1>
+        </div>
     </div>
     <!-- Axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" 
